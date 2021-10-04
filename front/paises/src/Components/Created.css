@@ -1,0 +1,5 @@
+.crear{
+    display: grid;
+    grid-template-columns: 98vw;
+    grid-template-rows: 97vh;
+}

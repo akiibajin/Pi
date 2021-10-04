@@ -1,0 +1,66 @@
+.todo-el-detalle{
+    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.568);
+    color:white;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 10vh 40vh 30vh;
+}
+.regresar{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+.titulo-char{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+.continente{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 30px;
+}
+.bandera{
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    height: 40vh;
+}
+.nombre{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10px;
+}
+.content{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    align-self: center;
+}
+.actividades{
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 47vw;
+    max-height: 30vh;
+    overflow-y: scroll;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.crear{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 50vw;
+    grid-template-rows: 30vh;
+}
+
+

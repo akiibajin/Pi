@@ -1,0 +1,13 @@
+.tarjetas{
+    background-color:rgba(0, 0, 0, 0.822);
+    margin-left: 19vw;
+    margin-top:0;
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: rgb(129, 199, 23) 1px solid;
+}

@@ -1,0 +1,27 @@
+.targeta{
+    width: 25vw;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 5vh 34vh 5vh;
+}
+.titulo{
+    grid-row-start:1;
+    align-self: flex-start;
+    color: rgb(129, 199, 23);
+    justify-self: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:1000;
+}
+.img{
+    grid-row:2;
+}
+.continent{
+    display: flex;
+    justify-content: space-between;
+    grid-row:3;
+    justify-self: stretch;
+}
+.flag{
+    height: 34vh;
+    width: 25vw;
+}
