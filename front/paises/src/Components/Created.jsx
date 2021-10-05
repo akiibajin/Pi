@@ -2,8 +2,11 @@ import Create from "./create"
 import './Created.css'
 export default function Created(){
     return(
+        <div className='cont'>
         <div className='crear'>
-            <Create boo={false}/>
+            <span>Registra la Actividad de Varios Paises</span>
+        </div>
+        <Create boo={false}/>
         </div>
     )
 }

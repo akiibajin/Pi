@@ -1,8 +1,35 @@
 .barra{
     position: absolute;
-    top:12vh ;
+    width: 15.5vw;
+    top:8vh ;
     bottom: 0px;
     left:0px;
-    background-color: rgba(0, 0, 0, 0.603);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(182, 182, 182);
+    border-right: black 2px solid;
+    box-shadow: 0px 0px 10px black;
+}
+.listaB{
+    list-style: none;
+}
+.botonf{
+    height: 5vh;
+    width: 10vw;
+    font-size:13px ;
+    transition: 0.25s;
+}.botonf:hover{
+    transform:translate(10px,0);
+    background-color:rgb(129, 199, 23);
+    color:black;
+}
+.botonfi{
+    height: 5vh;
+    width: 8vw;
+    font-size:15px;
+    font-weight: bolder;
+    transition: 0.25s;
+}.botonfi:hover{
+    transform:translate(10px,0);
+    background-color:rgb(129, 199, 23);
+    color:black;
 }

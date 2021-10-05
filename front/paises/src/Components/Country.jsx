@@ -12,7 +12,7 @@ export default function Country({char,img,name,capital,continent}){
             <div className='continent'>
             <span>{continent}</span>
             <Link to={`/home/country/${char}`}>
-                <p>Detalles</p>
+                <button className='enlace'>Detalles</button>
             </Link>
             </div>
         </div>

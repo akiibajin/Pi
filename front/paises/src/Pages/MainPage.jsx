@@ -16,20 +16,26 @@ export default function MainPage(){
         dispacth(Generar())
     },[])
     React.useEffect(()=>{
-        if(currentPage===1)setPostPerPage(9)
-        else setPostPerPage(10)
+         if(currentPage===1){
+            setPostPerPage(9)
+        }
+        else{
+            setPostPerPage(10)
+        } 
     },[currentPage])
+    React.useEffect(()=>{
+        setCurrenPage(1)
+    },[contenedor])
     const Searchby=(name)=>{
         dispacth(Generar(name))
     }
 
     const indexOfLastPost=currentPage*postsPerPage;
     const indexOfFirstPost=indexOfLastPost-postsPerPage;
-    const currentPosts=contenedor.slice(indexOfFirstPost,indexOfLastPost)
+    const currentPosts=contenedor&&contenedor.slice(indexOfFirstPost,indexOfLastPost)
 
-    const paginate=(pageNumber)=>{
-        setCurrenPage(pageNumber)
-    }
+    const paginate=(pageNumber)=>setCurrenPage(pageNumber)
+        
 
     return(
         <div>

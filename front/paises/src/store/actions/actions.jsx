@@ -46,9 +46,10 @@ export const OrdenarContinente=(payload)=>{
         payload
     }
 }
-export const OrdenarAZ=()=>{
+export const OrdenarAZ=(payload)=>{
     return{
         type:'ORDENARAZ',
+        payload
     }
 }
 export const OrdenarActivity=()=>{
@@ -64,9 +65,10 @@ export const OrdenarActivity=()=>{
             .catch(e=>console.log(e))
     }
 }
-export const OrdenarPoblacion=()=>{
+export const OrdenarPoblacion=(payload)=>{
     return {
-        type:'ORDERPOPULATION'  
+        type:'ORDERPOPULATION',
+        payload 
     }
 } 
 

@@ -5,7 +5,6 @@
     justify-self: center;
 }
 .submit{
-    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -13,7 +12,7 @@
     width: 35vw;
     background-image:url(https://cdn.pixabay.com/photo/2016/04/01/22/55/countries-1301799_960_720.png);
     background-size:17vw;
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: rgba(0, 0, 0, 0.904);
     border-radius: 5px;
 }
 .crearactividad{
@@ -77,4 +76,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.danger{
+    background-color: rgba(129, 199, 23, 0.774);
+    color:red;
 }

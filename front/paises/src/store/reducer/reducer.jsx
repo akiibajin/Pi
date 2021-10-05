@@ -32,11 +32,21 @@ const reducer=(state=initialState,action)=>{
     }
   }
   if(action.type==='ORDENARAZ'){  
-    const order=[].concat(state.filtered.sort((a,b)=>{if(a.name<b.name)return -1;else if(a.name>b.name)return 1;else return 0}))
-   state.filtered.length=0
-    return {
-      ...state,
-      filtered:state.filtered.concat(order)
+    //console.log('llega: ',action.payload)
+    if(action.payload==='desciende'){
+      let order=[].concat(state.filtered.sort((a,b)=>{if(a.name<b.name)return -1;else if(a.name>b.name)return 1;else return 0}))
+      state.filtered.length=0
+      return {
+        ...state,
+        filtered:state.filtered.concat(order)
+      }
+    }else if(action.payload==='asciende'){
+      let order=[].concat(state.filtered.sort((a,b)=>{if(a.name<b.name)return 1;else if(a.name>b.name)return -1;else return 0}))
+      state.filtered.length=0
+      return {
+        ...state,
+        filtered:state.filtered.concat(order)
+      }
     }
   }
   if(action.type==='ORDERACTIVITY'){
@@ -46,12 +56,21 @@ const reducer=(state=initialState,action)=>{
     }
   }
   if(action.type==='ORDERPOPULATION'){
-    const order=[].concat(state.filtered.sort((a,b)=>{if(a.population<b.population)return -1;else if(a.population>b.population)return 1;else return 0}))
-    state.filtered.length=0 
-     return {
-       ...state,
-       filtered: state.filtered.concat(order)
-  }
+    if(action.payload==='asciende'){
+      const order=[].concat(state.filtered.sort((a,b)=>{if(a.population<b.population)return -1;else if(a.population>b.population)return 1;else return 0}))
+      state.filtered.length=0 
+       return {
+         ...state,
+         filtered: state.filtered.concat(order)
+    }
+    }else{
+      const order=[].concat(state.filtered.sort((a,b)=>{if(a.population<b.population)return 1;else if(a.population>b.population)return -1;else return 0}))
+      state.filtered.length=0 
+       return {
+         ...state,
+         filtered: state.filtered.concat(order)
+    }
+    }
 }
   if(action.type==='CLEAN'){
     state.filtered.length=0

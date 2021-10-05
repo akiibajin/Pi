@@ -6,13 +6,11 @@
     align-content: center;
 }
 .int{
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: rgba(0, 0, 0, 0.877);
     width: 200px;
     height: 100px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:azure;
     font-size:1.75vw;
-    transition: 0.5s;
+    transition: 0.25s;
     border:1px solid azure;
 }.int:hover{
     transform: scale(1.15);

@@ -7,10 +7,11 @@
 .titulo{
     grid-row-start:1;
     align-self: flex-start;
-    color: rgb(129, 199, 23);
+    /* color: rgb(129, 199, 23); */
     justify-self: center;
-    font-family:'Courier New', Courier, monospace;
-    font-weight:1000;
+    color:rgb(187, 187, 187);
+    /* font-family:'Courier New', Courier, monospace; */
+    /* font-weight:1000; */
 }
 .img{
     grid-row:2;
@@ -24,4 +25,7 @@
 .flag{
     height: 34vh;
     width: 25vw;
+} 
+.enlace{
+
 }

@@ -3,43 +3,50 @@ import { useDispatch } from "react-redux"
 import './BAR.css'
 export default function Bar(){
     const dispatch=useDispatch()
+    const Limch=(e)=>{
+        e.preventDefault()
+        for(let i=0;i<e.target.length;i++){
+            e.target[i].checked=false
+        }
+    }
     return(
         <div className='barra'>
-            <button>Abrir/Cerrar</button>
-            <ul>
+            <form onSubmit={Limch}>
+            <ul className='listaB'>
                 <li>
                     Filtrar por Continente
-                    <ul>
-                        <li >
-                            <button value='Americas'  onClick={(e)=>dispatch(OrdenarContinente(e.target.value))}>America</button> 
+                    <ul className='listaB'>
+                        <li>
+                        <input type='checkbox' value='Americas' onClick={(e)=>{if(e.target.checked) dispatch(OrdenarContinente(e.target.value))}}/><span>America</span> 
                         </li>
                         <li>
-                            <button value='Europe'  onClick={(e)=>dispatch(OrdenarContinente(e.target.value))}>Europa</button>
+                        <input type='checkbox'  value='Europe' onClick={(e)=>{if(e.target.checked) dispatch(OrdenarContinente(e.target.value))}}/><span>Europa</span>
                         </li>
                         <li>
-                            <button value='Asia'  onClick={(e)=>dispatch(OrdenarContinente(e.target.value))}>Asia</button>
+                        <input type='checkbox' value='Asia' onClick={(e)=>{if(e.target.checked) dispatch(OrdenarContinente(e.target.value))}}/><span> Asia</span>
                         </li>
                         <li>
-                            <button value='Africa'  onClick={(e)=>dispatch(OrdenarContinente(e.target.value))}>Africa</button>
+                        <input type='checkbox' value='Africa' onClick={(e)=>{if(e.target.checked) dispatch(OrdenarContinente(e.target.value))}}/> <span> Africa</span>
                         </li>
-                        <li>
-                            <button value='Oceania'  onClick={(e)=>dispatch(OrdenarContinente(e.target.value))}>Oceania</button>
+                        <li>    
+                        <input type='checkbox' value='Oceania' onClick={(e)=>{if(e.target.checked) dispatch(OrdenarContinente(e.target.value))}} />   <span>Oceania</span>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <button onClick={()=>dispatch(OrdenarActivity())}>Filtrar por Tipo de Actividad Turistica</button> 
+                    <button className='botonf' onClick={()=>dispatch(OrdenarActivity())}>Actividad Turistica</button> 
                 </li>
                 <li>
-                    <button onClick={()=>dispatch(OrdenarAZ())}> Filtrar A-Z</button>
+                    <span>Filtrar A-Z</span><ul><li><button className='botonfi' value='asciende' onClick={(e)=>dispatch(OrdenarAZ(e.target.value))}>↑</button></li><button className='botonfi' value='desciende' onClick={(e)=>dispatch(OrdenarAZ(e.target.value))}>↓</button><li></li></ul>
                 </li>
                 <li>
-                    <button onClick={()=>dispatch(OrdenarPoblacion())}>Filtrar por Poblacion</button>  
+                   <span>Población</span><ul><li><button className='botonfi' value='asciende' onClick={(e)=>dispatch(OrdenarPoblacion(e.target.value))}>↑</button></li><li><button className='botonfi' value='desciende' onClick={(e)=>dispatch(OrdenarPoblacion(e.target.value))}>↓</button></li></ul>  
                 </li>
                 <li>
-                    <button onClick={()=>dispatch(Clean())}> Limpiar Filtros </button>
+                    <button className='botonf' type='submit' onClick={()=>dispatch(Clean())}> Limpiar Filtros </button>
                 </li>
             </ul>
+            </form>
         </div>
     )
 }

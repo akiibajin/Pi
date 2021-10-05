@@ -11,7 +11,7 @@ export default function Detail({props}){
     React.useEffect(()=>{
         dispatch(funcDetail(props))
     },[])
-    console.log(detail)
+    const Render=()=>dispatch(funcDetail(props))
     return(
         <div className='todo-el-detalle'>
             <div className='regresar'   >
@@ -31,22 +31,22 @@ export default function Detail({props}){
             </h2>
             <div className='content'>
             <h3 className='capital'>
-               capital: {detail.capital}
+               Capital: {detail.capital}
             </h3>
             <h2 className='subregion'>
-               subregion: {detail.subregion}
+               Subregion: {detail.subregion}
             </h2>
             <p className='area'>
-               area: {detail.area}
+               Área: {`${new Intl.NumberFormat().format(detail.area)} 'Km2'`} 
             </p>
             <p className='poblacion'>
-               poblacion: {detail.population}
+               Poblacion: {new Intl.NumberFormat().format(detail.population)}
             </p>
             </div>
             <div className='actividades'>
             {detail.Actividades&&detail.Actividades.map((e,i)=>{
                 return (
-                <div key={i}>
+                <div key={i} className='actividad'>
                     <p key={e.name}>actividad: {e.name}</p>
                     <p key={e.dificultad}>dificultad: {e.dificultad}</p>
                     <p key={e.temporada}>temporada: {e.temporada}</p>
@@ -56,7 +56,7 @@ export default function Detail({props}){
             )}
             </div>
             <div className='crear'>
-            <Create prop={props} boo={true}/>
+            <Create prop={props} boo={true} Render={Render}/>
             </div>
 
         </div>
