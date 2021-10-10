@@ -3,81 +3,89 @@
     grid-column: 1;
     align-self: flex-start;
     justify-self: center;
-}
+} 
 .submit{
     display: flex;
     flex-direction: column;
     align-content: space-around;
     height: 30vh;
     width: 35vw;
-    background-image:url(https://cdn.pixabay.com/photo/2016/04/01/22/55/countries-1301799_960_720.png);
-    background-size:17vw;
     background-color: rgba(0, 0, 0, 0.904);
     border-radius: 5px;
 }
 .crearactividad{
-    color: rgb(129, 199, 23);
+    color:white;
     background-color: rgba(0, 0, 0, 0.747);
     font-size: larger;
     font-weight: bolder;
 }
 .colocarNombre{
-    border: 1px solid rgb(129, 199, 23);
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.747);
-    color: rgb(129, 199, 23);
+    background-color:black;
+    color: white;
     font-size: larger;
     font-weight: bolder;
 }
 .selecDifi{
-    border: 1px solid rgb(129, 199, 23);
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.747);
-    color: rgb(129, 199, 23);
+    background-color:black;
+    color: white;
     font-size: larger;
     font-weight: bolder;
 }
 .colocarDuracion{
-    border: 1px solid rgb(129, 199, 23);
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.747);
-    color: rgb(129, 199, 23);
+    background-color:black;
+    color: white;
     font-size: larger;
     font-weight: bolder;
 }
 .selecPais{
-    border: 1px solid rgb(129, 199, 23);
+    border: 2px solid white;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.747);
-    color: rgb(129, 199, 23);
+    background-color:black;
+    color: white;
     font-size: larger;
     font-weight: bolder;
 }
 .botonSub{
-    border: 1px solid rgb(129, 199, 23);
+    border: 2px solid white;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.747);
-    color: rgb(129, 199, 23);
+    color: white;
     font-size: larger;
     font-weight: bolder;
 }
 .selecTemporada{
-    border: 1px solid rgb(129, 199, 23);
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.747);
-    color: rgb(129, 199, 23);
+    background-color:black;
+    color: white;
     font-size: larger;
     font-weight: bolder;
 }
 .paisesAgregados{   
-    background-color:rgba(129, 199, 23, 0.774) ;
+    background-color:black ;
     max-width: 35vw;
+    max-height: 10vh;
     color:black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .danger{
-    background-color: rgba(129, 199, 23, 0.774);
+    background-color: black;
     color:red;
+}
+.botonQuite{
+    width: 4vw;
+    color:white;
+    background-color: black;
+}
+.SpanPaises{
+    color:white;
+
 }

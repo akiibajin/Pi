@@ -1,41 +1,49 @@
-.tarjetas{
-    background-color:rgba(0, 0, 0, 0.822);
-    margin-left: 15.5vw;
-    margin-top:0;
-    max-width: 100vw;
-    max-height: 80vh;
-    overflow: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    border: rgb(129, 199, 23) out   set;
-    scrollbar-color: rgb(129, 199, 23) rgba(0, 0, 0, 0);
-    scrollbar-width: thin;
+.tarjetas {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.425);
+  margin-left: 15.5vw;
+  margin-top: 18vh;
+  max-width: 100vw;
+  max-height: 75vh;
+  overflow: auto;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: white outset;
+  scrollbar-color: white rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
 }
 .tarjetas::-webkit-scrollbar {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .tarjetas::-webkit-scrollbar:vertical {
-    width:10px;
-    animation-delay: 0.2s;
+  width: 10px;
+  animation-delay: 0.2s;
 }
 
-.tarjetas::-webkit-scrollbar-button:increment,.tarjetas::-webkit-scrollbar-button {
-    display: none;
-} 
+.tarjetas::-webkit-scrollbar-button:increment,
+.tarjetas::-webkit-scrollbar-button {
+  display: none;
+}
 
 .tarjetas::-webkit-scrollbar:horizontal {
-    height: 10px;
+  height: 10px;
 }
 
 .tarjetas::-webkit-scrollbar-thumb {
-    background-color: #797979;
-    border-radius: 20px;
-    border: 2px solid #f1f2f3;
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
 }
 
 .tarjetas::-webkit-scrollbar-track {
-    border-radius: 10px;  
+  border-radius: 10px;
 }

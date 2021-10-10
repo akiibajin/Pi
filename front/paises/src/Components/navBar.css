@@ -8,7 +8,6 @@
 }
 .lista{
     list-style:none;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -17,9 +16,6 @@
 .hijo1{
     text-decoration: none;
     color:white
-}
-.hijo:visited{
-    text-decoration: none;
 }
 .parrafo{
     font-size: larger;

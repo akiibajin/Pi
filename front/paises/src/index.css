@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@font-face {
+    font-family: "mario";
+    src: url("./Fonts/Retro Gaming.ttf")format('truetype');
+    font-style: normal;
+    font-size: normal;
+}
 body{
-    font-family: 'Saira Stencil One', cursive;
-    color:rgb(129, 199, 23)
+    font-family: "mario";
 }
 button{
-    font-family: 'Saira Stencil One', cursive;
-    color:rgb(129, 199, 23)
+    width: 100px;
+    background-color: white;
+    font-family: "mario";
+    color:white
 }
 input{
-    font-family: 'Saira Stencil One', cursive;
-    color:rgb(129, 199, 23)
+    font-family: "mario";
 }
 select{
-    font-family: 'Saira Stencil One', cursive;
-    color:rgb(129, 199, 23)
+    font-family: "mario";
 }

@@ -1,31 +1,97 @@
+@font-face {
+    font-family: "arca";
+    src: url('../Fonts/ka1.ttf');
+}
+.marios{
+    width:8vw
+}
 .targeta{
+    list-style: none;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('../images/target.jpeg');
+    background-size: 50vh 25vw;
     width: 25vw;
     height: 50vh;
     display: grid;
-    grid-template-rows: 5vh 34vh 5vh;
+    border-right: 1px solid black;
+    grid-template-rows: 6.3vh 34vh auto;
+}
+.NombrePais{
+    font-size:1em;
+}
+.NameCountry{
+    width: 17vw;
+    height: 6.2vh;
+    align-items:end;
+}
+.wrapperD {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    position: relative;
+  }
+  .coin-box__boxD {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    background: linear-gradient(135deg, #dcba00 0%, #ffe65c 100%);
+    border: #f5d000 solid 5px;
+    border-top-color: #fff3b3;
+    border-bottom-color: #8f7900;
+    border-left-color: #ffdf29;
+    border-right-color: #ffe65c;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+.lifes{
+    width: 100%;
+    margin-top: 2px;
+    color: white;
+    font-family: "Press Start 2P";
+    font-size: 1em;
+    text-shadow: 5px 2px 0 #262626;
+}
+.mariow{
+    height: 5vh;
+    padding-right: 15px;
 }
 .titulo{
-    grid-row-start:1;
+    grid-row-start: 1;
     align-self: flex-start;
-    /* color: rgb(129, 199, 23); */
-    justify-self: center;
-    color:rgb(187, 187, 187);
-    /* font-family:'Courier New', Courier, monospace; */
-    /* font-weight:1000; */
+    justify-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .img{
-    grid-row:2;
+    grid-row: 2;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 3px solid black;
+    height: 34vh;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.651);
 }
 .continent{
     display: flex;
-    justify-content: space-between;
-    grid-row:3;
+    justify-content: space-around;
+    grid-row: 3;
     justify-self: stretch;
+    align-self: center;
 }
 .flag{
     height: 34vh;
-    width: 25vw;
+    width: 24vw;
 } 
-.enlace{
-
-}

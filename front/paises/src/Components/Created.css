@@ -1,9 +1,17 @@
-.crear{
-    height: 25vh;
-
+.contenerPlantilla{
+    display: grid;
+    grid-template-columns: 25vw 50vw 20vw;
+    grid-template-rows:25vh 40vh 30vh; 
 }
-.cont{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.creare{
+    height: 25vh;
+}
+.marioY{
+    grid-column:3;
+    grid-row:3;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+.yoshiM{
+    height: 35vh;
 }

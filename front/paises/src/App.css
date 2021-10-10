@@ -1,11 +1,9 @@
 body{
-    background-image: url(https://wallpaperaccess.com/full/3784900.jpg);
+    background-image: url(https://www.teahub.io/photos/full/236-2364108_world-map-video-game.jpg);
     background-size: 100vw 100vh;
 }
 button{
     background-color: rgba(0, 0, 0, 0.836);
-    color:rgb(129, 199, 23);
     border-radius: 5px;
-    border:rgb(129, 199, 23) 1px solid;
     cursor: pointer;
 }

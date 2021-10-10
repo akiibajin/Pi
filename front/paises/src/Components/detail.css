@@ -25,12 +25,20 @@
     justify-self: flex-end;
     margin-right: 30px;
 }
+.marioV{
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: flex-start;
+    height: 30vh;
+}
 .bandera{
     grid-column: 1;
     grid-row: 2;
     align-self: center;
     justify-self: center;
     height: 40vh;
+    width: 30vw;
 }
 .nombre{
     grid-column: 1;
@@ -44,20 +52,20 @@
     align-self: center;
 }
 .actividades{
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: black;
     grid-column: 2;
     grid-row: 3;
     align-self: center;
     max-width: 43vw;
-    max-height: 30vh;
+    max-height: 29vh;
     overflow: auto;
-    scrollbar-color: rgb(129, 199, 23) rgba(0, 0, 0, 0);
+    scrollbar-color: white   rgba(0, 0, 0, 0);
     scrollbar-width: thin;
     justify-self: stretch;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border:rgb(129, 199, 23) ridge;
+    border:white ridge;
 }
 .actividades::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -74,7 +82,7 @@
 .actividades::-webkit-scrollbar:horizontal {
     height: 10px;
 }
-
+ 
 .actividades::-webkit-scrollbar-thumb {
     background-color: #797979;
     border-radius: 20px;
@@ -85,8 +93,8 @@
     border-radius: 10px;  
 }
 .actividad{
-    border:rgb(129, 199, 23) dashed;
-    color:rgb(129, 199, 23);
+    border:white dashed;
+    color:white;
 }
 .crear{
     grid-column-start: 2;
