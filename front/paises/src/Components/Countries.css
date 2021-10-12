@@ -1,9 +1,9 @@
 .tarjetas {
   list-style: none;
   background-color: rgba(0, 0, 0, 0.425);
-  margin-left: 15.5vw;
+  margin-left: 15.5vw; 
   margin-top: 18vh;
-  max-width: 100vw;
+  max-width: 80vw;
   max-height: 75vh;
   overflow: auto;
   -ms-box-orient: horizontal;
@@ -16,7 +16,11 @@
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: white outset;
+  border:silver 15px solid; 
+  border-image:url(../images/borderBrick.png); 
+   border-image-slice: 90; 
+  border-image-repeat: repeat; 
+  /* border: white outset; */
   scrollbar-color: white rgba(0, 0, 0, 0);
   scrollbar-width: thin;
 }

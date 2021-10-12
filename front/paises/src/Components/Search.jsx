@@ -18,11 +18,11 @@ export default function Search({ searchby }) {
       <input
         type="text"
         className='busqueda'
-        placeholder="que pais desea buscar"
+        placeholder="Countries"
         onChange={handleOnChange}
         value={search}
       />
-      <button type='submit'>Enviar</button>
+      <button type='submit'>Send</button>
       </form>
     </div>
   );

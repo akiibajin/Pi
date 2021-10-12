@@ -21,7 +21,7 @@ export default function Bar() {
         <nav>
           <ul className="listaB">
             <li>
-              Filtrar por Continente
+              <span>Filter By Continent</span>
               <ul className="listaB">
                 <li>
                   <input
@@ -93,7 +93,7 @@ export default function Bar() {
                     }, 1300);
                   }}
                 >
-                  <span className="coin-box__text">Actividad Turistica</span>
+                  <span className="coin-box__text">Tourist Activity</span>
                   <div>
                     <div className="coin-box__rivet"></div>
                     <div className="coin-box__rivet"></div>
@@ -104,7 +104,7 @@ export default function Bar() {
               </div>
             </li>
             <li>
-              <span>Filtrar A-Z</span>
+              <span>Filter by A-Z</span>
               <ul className="listaB">
                 <li className='space'>
                   <div className="wrapperK">
@@ -155,7 +155,7 @@ export default function Bar() {
               </ul>
             </li>
             <li className='space'>
-              <span>Población</span>
+              <span>Population</span>
               <ul className="listaB">
                 <li className='space'>
                   <div className="wrapperK">

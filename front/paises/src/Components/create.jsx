@@ -64,23 +64,23 @@ export  function Create({ prop, boo, Render/*,funcPost,countries*/ }) {
   return (
     <div className="formulario">
       <form onSubmit={Enviar} className="submit">
-        <span name='crearActividad' className="crearactividad">Crear Actividad</span>
+        <span name='crearActividad' className="crearactividad">Create Activity</span>
         <input
-          className={errors.name , "colocarNombre"}
+          className={errors.name || "colocarNombre"}
           name="name"
           value={inputs.name}
-          placeholder="nombre de la actividad"
+          placeholder="Activity's Name"
           onChange={handleOnChange}
           type="text"
         />
         {errors.name && <span className="danger">{errors.name}</span>}
         <select
-          className={errors.dificultad , "selecDifi"}
+          className={errors.dificultad || "selecDifi"}
           name="dificultad"
           value={inputs.dificultad}
           onChange={handleOnChange}
         >
-          <option value="">Selecciona la dificultad</option>
+          <option value="">Select Difficulty</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -91,25 +91,25 @@ export  function Create({ prop, boo, Render/*,funcPost,countries*/ }) {
           <span className="danger">{errors.dificultad}</span>
         )}
         <input
-          className={errors.duracion , "colocarDuracion"}
+          className={errors.duracion || "colocarDuracion"}
           name="duracion"
           type="text"
-          placeholder="duración"
+          placeholder="Duration"
           value={inputs.duracion}
           onChange={handleOnChange}
         />
         {errors.duracion && <span className="danger">{errors.duracion}</span>}
         <select
-          className={errors.temporada , "selecTemporada"}
+          className={errors.temporada || "selecTemporada"}
           name="temporada"
           value={inputs.temporada}
           onChange={handleOnChange}
         >
-          <option value="">Selecciona la Temporada</option>
-          <option value="Verano">Verano</option>
-          <option value="Otoño">Otoño</option>
-          <option value="Invierno">Invierno</option>
-          <option value="Primavera">Primavera</option>
+          <option value="">Select Season</option>
+          <option value="Verano">Summer</option>
+          <option value="Otoño">Autumn</option>
+          <option value="Invierno">Winter</option>
+          <option value="Primavera">Spring</option>
         </select>
         {errors.temporada && <span className="danger">{errors.temporada}</span>}
         <select
@@ -125,7 +125,7 @@ export  function Create({ prop, boo, Render/*,funcPost,countries*/ }) {
           ))}
         </select>
         <button className="botonSub" type="submit" disabled={errors.flag}>
-          Crear{" "}
+          Create{" "}
         </button>
         <div className="paisesAgregados">
           {inputs.pais &&

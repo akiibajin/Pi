@@ -10,7 +10,7 @@ export default function NavBar() {
               <div
                 className={`coin-box__boxD`} >
                 <span className="coin-box__text">
-                  Inicio
+                  Index
                 </span>
                 <div>
                   <div className="coin-box__rivet"></div>
@@ -36,7 +36,7 @@ export default function NavBar() {
               }
               >
                 <span className="coin-box__text">
-                  Crear Actividad
+                  Create Activity
                 </span>
                 <div>
                   <div className="coin-box__rivet"></div>

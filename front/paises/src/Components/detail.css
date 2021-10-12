@@ -1,10 +1,29 @@
 .todo-el-detalle{
     margin-top: 10vh;
     background-color: rgba(0, 0, 0, 0.568);
-    color:rgb(187, 187, 187);
+     color:rgb(187, 187, 187); 
+    border:20px solid gray;
+    border-image:url(../images/brickcastle.png);
+    border-image-slice: 70; 
+    border-image-repeat: repeat; 
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 10vh 40vh 30vh;
+}
+.errorMessage{
+    color:white;
+    text-shadow: 2px 2px 0 black;
+}
+.mariocapa{
+    grid-column: 1;
+    grid-row:3;
+    justify-self: flex-end;
+    align-self: flex-end;
+    height: 10vh;
+    margin-right: 10vh;
+    transition: 10s;
+}.mariocapa:hover{
+    transform: rotate(50,0);
 }
 .regresar{
     grid-column: 1;
@@ -65,7 +84,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border:white ridge;
+    border:20px solid gray;
+    border-image:url(../images/brickcastle.png);
+    border-image-slice: 70; 
+    border-image-repeat: repeat; 
 }
 .actividades::-webkit-scrollbar {
     -webkit-appearance: none;

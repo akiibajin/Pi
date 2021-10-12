@@ -4,7 +4,7 @@ import mariow from "../images/mario tall walking.gif";
 import mchiquito from '../images/mario walking.gif'
 export default function Country({ char, img, name, continent,error }) {
   if(error){
-    return(<div><h1>{error}</h1><img src={mchiquito} alt='y mario?'/></div>)
+    return(<div><h1 className='errorMessage'>{error}</h1><img src={mchiquito} alt='And Mario?'/></div>)
   }
   return (
     <div className="targeta">
@@ -26,7 +26,7 @@ export default function Country({ char, img, name, continent,error }) {
         <Link to={`/home/country/${char}`} style={{textDecoration:'none'}}>
           <div className="wrapperD">
             <div className={`coin-box__boxD`}>
-              <span className="coin-box__text">Detalles</span>
+              <span className="coin-box__text">Details</span>
               <div>
                 <div className="coin-box__rivet"></div>
                 <div className="coin-box__rivet"></div>

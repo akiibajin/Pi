@@ -4,10 +4,10 @@
   top: 8vh;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.774);
+  background:url(../images/pipe1.png);
+  background-size: 15.5vw 92vh;
   color: white;
-  border-right: black 2px solid;
-  box-shadow: 0px 0px 10px black;
+  text-shadow: 2px 2px 0 black;
 }
 .space{
   padding-top: 5px;
@@ -53,4 +53,10 @@
   color: white;
   text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.849);
   font-size: 1.5em;
+  cursor: pointer;
 }
+/* .submitClear{
+  cursor: pointer;
+  height: 10vh;
+  background-color: #ffe65c;
+} */

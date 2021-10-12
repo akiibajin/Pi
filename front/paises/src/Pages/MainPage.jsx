@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Generar} from "../store/actions/actions.jsx";
 import Search from "../Components/Search.jsx";
 import Pagination from "../Components/Pagination.jsx";
+import marioMap from "../music/mapaMario.mp3"
 export default function MainPage() {
   const dispacth = useDispatch();
   const filtered = useSelector((state) => state.filtered);
@@ -19,6 +20,7 @@ export default function MainPage() {
 
   return (
     <div>
+      <audio src={marioMap}loop autoPlay></audio>
       <Bar />
       <Search searchby={Searchby}  />
       <Pagination

@@ -21,8 +21,8 @@ export default function Countries({ countries }) {
           })
         ) : (
           <div>
-          <h1>No se encontro el Pais</h1>
-          <img src={mchiquito} alt='y mario?'/>
+          <h1>The country was not Found</h1>
+          <img src={mchiquito} alt='And Mario?'/>
           </div>
         )}
       </ul>
