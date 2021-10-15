@@ -1,26 +1,24 @@
 const express = require("express");
 const router = express.Router();
-const {
-  hacerPedidoPorNombre,
-} = require("../controllers/controller.js");
+const { hacerPedidoPorNombre } = require("../controllers/controller.js");
 const { Paises, Actividades, Activi_Paises } = require("../db/connection.js");
 
 router.route("/countries").get(async (req, res) => {
   const { name } = req.query;
-  try{
-    if(name){
-      if(Number.isNaN(Number(name))&&name.length>2){
-        let paisesEncontrados=await hacerPedidoPorNombre(name);
-        res.json(paisesEncontrados)
-      }else{
-        res.status(400).json([{error:'pais no encontrado'}])
+  try {
+    if (name) {
+      if (Number.isNaN(Number(name)) && name.length > 2) {
+        let paisesEncontrados = await hacerPedidoPorNombre(name);
+        res.json(paisesEncontrados);
+      } else {
+        res.status(400).json([{ error: "pais no encontrado" }]);
       }
-    }else{
-      let PaisesEncontradosDb=await Paises.findAll()
-      res.json(PaisesEncontradosDb)
+    } else {
+      let PaisesEncontradosDb = await Paises.findAll();
+      res.json(PaisesEncontradosDb);
     }
-  }catch(e){
-    res.status(400).json({error:`${e}`})
+  } catch (e) {
+    res.status(400).json({ error: `${e}` });
   }
 });
 router.route("/countries/:id").get(async (req, res) => {
@@ -32,10 +30,10 @@ router.route("/countries/:id").get(async (req, res) => {
           model: Actividades,
         },
       });
-      if(pais){
+      if (pais) {
         return res.json(pais);
       }
-      res.status(400).json({error:'No se encontro el Pais'})
+      res.status(400).json({ error: "No se encontro el Pais" });
     } catch (e) {
       res.status(400).json({ error: "Pais no Encontrado" });
     }
@@ -44,19 +42,19 @@ router.route("/countries/:id").get(async (req, res) => {
 router.route("/activity").post(async (req, res) => {
   const { name, duracion, dificultad, temporada, pais } = req.body;
   try {
-    let searchPais= await Promise.all(pais.map((e) => Paises.findByPk(e)));
-    const [activities,value] = await Actividades.findOrCreate({
-      where:{
+    let searchPais = await Promise.all(pais.map((e) => Paises.findByPk(e)));
+    const [activities, value] = await Actividades.findOrCreate({
+      where: {
         name,
         duracion,
         dificultad,
         temporada,
-      }
+      },
     });
-    await Promise.all(searchPais.map(e => e.addActividades(activities)));
+    await Promise.all(searchPais.map((e) => e.addActividades(activities)));
     res.json({ activities, searchPais });
   } catch (e) {
-    res.json({error:`${e}`});
+    res.json({ error: `${e}` });
   }
 });
 router.route("/details").get(async (req, res) => {

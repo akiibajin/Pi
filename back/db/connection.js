@@ -1,10 +1,10 @@
 const { Sequelize } = require("sequelize");
 const modelPaises = require("./datos/paises.js");
 const modelActividades = require("./datos/actividades.js");
-require('dotenv').config();
-const USER=process.env.USER
-const PASSWORD=process.env.PASSWORD
-console.log(USER,PASSWORD)
+require("dotenv").config();
+const USER = process.env.USER;
+const PASSWORD = process.env.PASSWORD;
+console.log(USER, PASSWORD);
 const sequelize = new Sequelize(
   `postgres://${USER}:${PASSWORD}@localhost:5432/countries`
 );
