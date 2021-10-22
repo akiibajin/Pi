@@ -1,8 +1,5 @@
 const { default: axios } = require("axios");
 
-// GET https://restcountries.com/v2/all
-// GET https://restcountries.com/v2/name/{name}
-// GET https://restcountries.com/v2/alpha/{code}
 
 module.exports = {
   hacerPedidoCountries: () => {
